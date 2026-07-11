@@ -1,0 +1,200 @@
+﻿.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 120px; /* offset for sticky navbar */
+  background: linear-gradient(to right, rgba(18, 18, 18, 0.95) 30%, rgba(18, 18, 18, 0.7) 70%), url('/lifestyle_bg.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.heroContainer {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  z-index: 10;
+}
+
+.heroTagline {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 500px;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+/* Custom premium styling for Buy Now button to make it extra attractive */
+.btnBuyNow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border: 1px solid var(--text-primary);
+  border-radius: 9999px;
+  padding: 14px 32px;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+  transition: var(--transition-smooth);
+}
+
+.btnBuyNow:hover {
+  background-color: transparent;
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+.heroRight {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+/* Floating helper element behind the 3D scene */
+.glowOverlay {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.footer {
+  background-color: #0b0b0b;
+  padding: 60px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footerLogo {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+
+.footerLogoBold {
+  font-weight: 900;
+  color: var(--text-primary);
+}
+
+.footerLogoRegular {
+  font-weight: 300;
+  color: var(--text-muted);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.socialLink:hover {
+  border-color: #c9a96e;
+  color: #c9a96e;
+  transform: translateY(-2px);
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+    padding: 160px 0 80px 0;
+  }
+  
+  .heroContainer {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+  
+  .heroLeft {
+    align-items: center;
+  }
+  
+  .heroTitle {
+    font-size: 3rem;
+  }
+  
+  .heroSubtitle {
+    margin: 0 auto;
+  }
+  
+  .heroActions {
+    justify-content: center;
+  }
+  
+  .heroRight {
+    height: 350px;
+  }
+}

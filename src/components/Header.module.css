@@ -1,0 +1,81 @@
+.headerContainer {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  background: rgba(26, 26, 26, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  padding: 16px 36px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+}
+
+.logoBold {
+  font-weight: 900;
+  color: var(--text-primary);
+}
+
+.logoRegular {
+  font-weight: 300;
+  color: var(--text-muted);
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.navLinks a {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--text-secondary);
+}
+
+.navLinks a:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 12px 24px;
+  }
+  
+  .navLinks {
+    gap: 16px;
+  }
+  
+  .navLinks a {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+  
+  .logo a {
+    font-size: 1.1rem;
+  }
+}
