@@ -13,7 +13,7 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
-const baseUrl = "https://www.harrycorner.com";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.harrycorner.com";
 
 export const metadata = {
   metadataBase: new URL(baseUrl),

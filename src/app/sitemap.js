@@ -1,5 +1,5 @@
 ﻿export default async function sitemap() {
-  const baseUrl = "https://www.harrycorner.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.harrycorner.com";
   const lastModified = new Date("2026-07-11");
 
   return [
