@@ -1,4 +1,6 @@
-﻿export default async function sitemap() {
+﻿export const dynamic = "force-static";
+
+export default async function sitemap() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.harrycorner.com";
   const lastModified = new Date("2026-07-11");
 

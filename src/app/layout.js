@@ -33,20 +33,11 @@ export const metadata = {
     siteName: "Harry Corner",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Harry Corner — Premium Kitchen Tools",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Harry Corner | Premium Kitchen Tools & Durable Essentials",
     description: "Shop premium kitchen essentials and professional-grade baking tools from Harry Corner.",
-    images: ["/opengraph-image.png"],
   },
 };
 
