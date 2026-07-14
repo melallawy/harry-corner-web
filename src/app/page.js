@@ -34,7 +34,7 @@ export default function Home() {
                     BUY NOW
                   </a>
                   
-                  <a href="#products" className="btn-primary">
+                  <a href="#products" className={styles.btnBuyNow}>
                     EXPLORE THE TOOLS <ArrowRight size={16} />
                   </a>
                 </div>
@@ -66,13 +66,13 @@ export default function Home() {
               <span className={styles.footerLogoRegular}>CORNER</span>
             </div>
             <div className={styles.socialLinks}>
-              <a href="https://www.instagram.com/harrycorner" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Instagram">
+              <a href="https://www.instagram.com/harry_corner_oficcial" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Instagram">
                 IG
               </a>
               <a href="https://www.tiktok.com/@harrycorner" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="TikTok">
                 TT
               </a>
-              <a href="https://www.pinterest.com/harrycorner" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Pinterest">
+              <a href="https://www.pinterest.com/harry_corner_oficcial" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Pinterest">
                 Pin
               </a>
             </div>
