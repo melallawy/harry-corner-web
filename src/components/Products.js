@@ -1,31 +1,11 @@
-﻿"use client";
-
-import { useEffect, useState } from "react";
-import { fetchShopifyProducts } from "../utils/shopify";
+﻿import { fetchShopifyProducts } from "../utils/shopify";
 import styles from "./Products.module.css";
 
-export default function Products() {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
+export default async function Products() {
+  const products = await fetchShopifyProducts();
 
-  useEffect(() => {
-    async function loadProducts() {
-      const items = await fetchShopifyProducts();
-      setProducts(items);
-      setLoading(false);
-    }
-    loadProducts();
-  }, []);
-
-  if (loading) {
-    return (
-      <section id="products" className="section">
-        <div className="container">
-          <h2 className="section-title">Our Products</h2>
-          <p className="section-subtitle">Loading our premium collection...</p>
-        </div>
-      </section>
-    );
+  if (!products || products.length === 0) {
+    return null;
   }
 
   return (
@@ -51,7 +31,6 @@ export default function Products() {
                   alt={`${product.title} — Harry Corner premium kitchen tool`}
                   className={styles.productImage}
                   loading="lazy"
-                  onError={(e) => { e.target.style.display = "none"; }}
                 />
               </div>
 
