@@ -52,29 +52,12 @@ export default function Products() {
               <div className={styles.info}>
                 <h3 className={styles.productTitle}>{product.title}</h3>
                 <p className={styles.description}>{product.description}</p>
-                <div className={styles.meta}>
+                <div className={styles.footer}>
                   <span className={styles.price}>${product.price}</span>
-                </div>
-                
-                <div className={styles.actions}>
-                  <a
-                    href={product.shopifyUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary"
-                    style={{ width: "100%", justifyContent: "center", padding: "10px 16px" }}
-                  >
-                    BUY NOW
-                  </a>
-                  <a
-                    href={product.amazonUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-secondary"
-                    style={{ width: "100%", justifyContent: "center", padding: "10px 16px" }}
-                  >
-                    VISIT AMAZON
-                  </a>
+                  <div className={styles.actions}>
+                    <a href={product.shopifyUrl} target="_blank" rel="noopener noreferrer" className={styles.buyBtn}>BUY NOW</a>
+                    <a href={product.amazonUrl} target="_blank" rel="noopener noreferrer" className={styles.amazonBtn}>AMAZON</a>
+                  </div>
                 </div>
               </div>
 
