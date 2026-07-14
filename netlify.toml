@@ -4,3 +4,5 @@
 
 [build.environment]
   NODE_VERSION = "22"
+  NEXT_PUBLIC_SHOPIFY_DOMAIN = "harry-corner.myshopify.com"
+  NEXT_PUBLIC_SHOPIFY_STOREFRONT_TOKEN = "d1032a27048e1f7ee91fe4b5e9abe5e0"

@@ -9,7 +9,7 @@ const MOCK_PRODUCTS = [
     title: "The Signature Stainless Steel Rolling Pin",
     description: "Commercial-grade steel with double-bearing rotation handles. Designed for perfectly even pastry and bread doughs.",
     price: "49.99",
-    imageUrl: "/images/rolling-pin.jpg", // We can use mock UI or simple styling
+    imageUrl: "/images/rolling-pin.svg",
     amazonUrl: "https://www.amazon.com", // Fallback outbound link
     shopifyUrl: "#",
     inStock: true
@@ -19,7 +19,7 @@ const MOCK_PRODUCTS = [
     title: "Ergonomic Walnut Mixing Bowl Set",
     description: "Handcrafted from solid premium walnut. Deep-well design with stabilizing silicone-grip bases.",
     price: "85.00",
-    imageUrl: "/images/mixing-bowl.jpg",
+    imageUrl: "/images/mixing-bowl.svg",
     amazonUrl: "https://www.amazon.com",
     shopifyUrl: "#",
     inStock: true
@@ -29,7 +29,7 @@ const MOCK_PRODUCTS = [
     title: "Heavy-Duty Bench Scraper & Chopper",
     description: "Laser-etched measurement guides with a non-slip weighted handle. The ultimate kitchen workstation tool.",
     price: "24.50",
-    imageUrl: "/images/bench-scraper.jpg",
+    imageUrl: "/images/bench-scraper.svg",
     amazonUrl: "https://www.amazon.com",
     shopifyUrl: "#",
     inStock: true
@@ -94,7 +94,7 @@ export async function fetchShopifyProducts() {
     // Map Shopify response to standard structure
     return data.products.edges.map(({ node }) => {
       const price = node.priceRange?.minVariantPrice?.amount || "0.00";
-      const imageUrl = node.images?.edges?.[0]?.node?.url || "/placeholder.jpg";
+      const imageUrl = node.images?.edges?.[0]?.node?.url || "/placeholder.svg";
       const shopifyUrl = node.onlineStoreUrl || (node.handle ? `${SHOPIFY_STORE_URL}/products/${node.handle}` : "#");
       const encodedTitle = encodeURIComponent(`Harry Corner ${node.title}`);
       const amazonUrl = `https://www.amazon.com/s?k=${encodedTitle}`;
