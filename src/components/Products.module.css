@@ -12,11 +12,14 @@
   display: flex;
   flex-direction: column;
   transition: var(--transition-smooth);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  border-color: var(--text-primary);
+  border-color: #c9a96e;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
@@ -91,36 +94,15 @@
 }
 
 .buyBtn {
-  padding: 6px 16px;
-  background: var(--text-primary);
-  color: var(--bg-primary);
-  border-radius: 6px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  transition: var(--transition-smooth);
-}
-
-.buyBtn:hover {
-  opacity: 0.85;
-}
-
-.amazonBtn {
-  padding: 6px 14px;
-  border: 1px solid var(--border-color);
-  color: var(--text-muted);
-  border-radius: 6px;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 600;
+  color: #c9a96e;
   letter-spacing: 0.05em;
-  text-decoration: none;
   transition: var(--transition-smooth);
 }
 
-.amazonBtn:hover {
-  border-color: var(--text-primary);
-  color: var(--text-primary);
+.card:hover .buyBtn {
+  color: #d4b87a;
 }
 
 @media (max-width: 480px) {

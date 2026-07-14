@@ -38,7 +38,13 @@ export default function Products() {
 
         <div className={styles.grid}>
           {products.map((product) => (
-            <div key={product.id} className={styles.card}>
+            <a
+              key={product.id}
+              href={product.shopifyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.card}
+            >
               <div className={styles.imageWrapper}>
                 <img
                   src={product.imageUrl}
@@ -54,10 +60,7 @@ export default function Products() {
                 <p className={styles.description}>{product.description}</p>
                 <div className={styles.footer}>
                   <span className={styles.price}>${product.price}</span>
-                  <div className={styles.actions}>
-                    <a href={product.shopifyUrl} target="_blank" rel="noopener noreferrer" className={styles.buyBtn}>BUY NOW</a>
-                    <a href={product.amazonUrl} target="_blank" rel="noopener noreferrer" className={styles.amazonBtn}>AMAZON</a>
-                  </div>
+                  <span className={styles.buyBtn}>BUY NOW →</span>
                 </div>
               </div>
 
@@ -83,7 +86,7 @@ export default function Products() {
                   }),
                 }}
               />
-            </div>
+            </a>
           ))}
         </div>
       </div>
