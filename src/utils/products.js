@@ -59,6 +59,48 @@ const products = [
       "Perfect for pizza dough, bread, and batters",
     ],
   },
+  {
+    id: "5",
+    title: "Professional Rolling Pin — Double Bearing",
+    price: "34.99",
+    description:
+      "Heavy-duty rolling pin with double-bearing rotation handles. Commercial-grade performance for flawless dough rolling every time.",
+    imageUrl: "/images/rolling-pin.svg",
+    features: [
+      "Double-bearing rotation handles for smooth rolling",
+      "Even thickness distribution",
+      "Perfect for pastries, cookies, and bread",
+      "Easy-grip handles reduce wrist strain",
+    ],
+  },
+  {
+    id: "6",
+    title: "Premium Mixing Bowl Set — 3-Piece",
+    price: "44.99",
+    description:
+      "Handcrafted mixing bowls with a premium finish. Set of 3 nesting sizes for every mixing task in your kitchen.",
+    imageUrl: "/images/mixing-bowl.svg",
+    features: [
+      "Set of 3 nesting sizes for every task",
+      "Premium materials for lasting durability",
+      "Non-slip base for secure mixing",
+      "Easy to clean and stackable storage",
+    ],
+  },
+  {
+    id: "7",
+    title: "Heavy-Duty Bench Scraper & Chopper",
+    price: "19.99",
+    description:
+      "Laser-etched measurement guides on a precision-ground stainless steel blade. The ultimate bench scraper and chopper combo for bakers.",
+    imageUrl: "/images/bench-scraper.svg",
+    features: [
+      "Laser-etched measurement guides",
+      "Precision-ground stainless steel blade",
+      "Comfortable ergonomic handle",
+      "Great for cutting, scraping, and portioning dough",
+    ],
+  },
 ];
 
 export default products;

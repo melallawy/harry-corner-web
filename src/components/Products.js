@@ -1,4 +1,5 @@
 ﻿import styles from "./Products.module.css";
+import products from "../utils/products";
 
 export default function Products() {
   return (
@@ -8,6 +9,37 @@ export default function Products() {
         <p className="section-subtitle">
           Tools, Not Gadgets. Premium essentials for your kitchen.
         </p>
+
+        <div className={styles.grid}>
+          {products.map((product) => (
+            <a
+              key={product.id}
+              href={product.buyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.card}
+            >
+              <div className={styles.imageWrapper}>
+                <img
+                  src={product.imageUrl}
+                  alt={product.title}
+                  className={styles.productImage}
+                  loading="lazy"
+                />
+              </div>
+              <div className={styles.info}>
+                <h3 className={styles.productTitle}>{product.title}</h3>
+                <p className={styles.description}>{product.description}</p>
+                <div className={styles.footer}>
+                  <span className={styles.price}>${product.price}</span>
+                  <div className={styles.actions}>
+                    <span className={styles.buyBtn}>BUY NOW</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
 
         {/* Magic Touch Banner */}
         <div className={styles.magicBanner}>
