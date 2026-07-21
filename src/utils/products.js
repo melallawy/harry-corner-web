@@ -13,11 +13,12 @@ const products = [
       "Works with sourdough, bread, pizza, and cookie dough",
       "Dishwasher safe",
     ],
+    buyLink: "https://amazon.com",
   },
   {
     id: "2",
     title: "Danish Dough Whisk — 304 Stainless Steel",
-    price: "8.99",
+    price: "9.99",
     description:
       "Premium 304 stainless steel Danish dough whisk. Heavy-duty construction for serious bakers who demand durability.",
     imageUrl:
@@ -28,6 +29,7 @@ const products = [
       "Replaces bulky stand mixers for many recipes",
       "Easy to clean by hand",
     ],
+    buyLink: "https://amazon.com",
   },
   {
     id: "3",
@@ -43,6 +45,7 @@ const products = [
       "Both tools essential for sourdough baking",
       "Save vs. buying separately",
     ],
+    buyLink: "https://amazon.com",
   },
   {
     id: "4",
@@ -58,6 +61,7 @@ const products = [
       "Professional performance at home",
       "Perfect for pizza dough, bread, and batters",
     ],
+    buyLink: "https://amazon.com",
   },
   {
     id: "5",
@@ -72,6 +76,7 @@ const products = [
       "Perfect for pastries, cookies, and bread",
       "Easy-grip handles reduce wrist strain",
     ],
+    buyLink: "https://amazon.com",
   },
   {
     id: "6",
@@ -86,6 +91,7 @@ const products = [
       "Non-slip base for secure mixing",
       "Easy to clean and stackable storage",
     ],
+    buyLink: "https://amazon.com",
   },
   {
     id: "7",
@@ -100,6 +106,7 @@ const products = [
       "Comfortable ergonomic handle",
       "Great for cutting, scraping, and portioning dough",
     ],
+    buyLink: "https://amazon.com",
   },
 ];
 

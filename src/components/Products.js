@@ -1,7 +1,11 @@
-﻿import styles from "./Products.module.css";
-import products from "../utils/products";
+﻿import products from "../utils/products";
+import styles from "./Products.module.css";
 
 export default function Products() {
+  if (!products || products.length === 0) {
+    return null;
+  }
+
   return (
     <section id="products" className="section">
       <div className="container">
@@ -14,29 +18,51 @@ export default function Products() {
           {products.map((product) => (
             <a
               key={product.id}
-              href={product.buyLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={product.buyLink || "#products"}
               className={styles.card}
+              target={product.buyLink ? "_blank" : undefined}
+              rel={product.buyLink ? "noopener noreferrer" : undefined}
             >
               <div className={styles.imageWrapper}>
                 <img
                   src={product.imageUrl}
-                  alt={product.title}
+                  alt={`${product.title} — Harry Corner premium kitchen tool`}
                   className={styles.productImage}
                   loading="lazy"
                 />
               </div>
+
               <div className={styles.info}>
                 <h3 className={styles.productTitle}>{product.title}</h3>
                 <p className={styles.description}>{product.description}</p>
                 <div className={styles.footer}>
                   <span className={styles.price}>${product.price}</span>
-                  <div className={styles.actions}>
-                    <span className={styles.buyBtn}>BUY NOW</span>
-                  </div>
+                  <span className={styles.buyBtn}>BUY NOW →</span>
                 </div>
               </div>
+
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Product",
+                    name: product.title,
+                    description: product.description,
+                    image: product.imageUrl,
+                    offers: {
+                      "@type": "Offer",
+                      price: product.price,
+                      priceCurrency: "USD",
+                      availability: "https://schema.org/InStock",
+                    },
+                    brand: {
+                      "@type": "Brand",
+                      name: "Harry Corner",
+                    },
+                  }),
+                }}
+              />
             </a>
           ))}
         </div>

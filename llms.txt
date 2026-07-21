@@ -1,4 +1,4 @@
-# Harry Corner — Premium Kitchen Tools E-Commerce
+# Harry Corner — Premium Kitchen Tools
 
 ## Tech Stack
 - **Framework:** Next.js 16.2.10 (App Router)
@@ -7,7 +7,6 @@
 - **Animation:** Framer Motion
 - **3D:** React Three Fiber / Three.js
 - **Icons:** Lucide React
-- **E-Commerce:** Static product catalog (no external API)
 - **Fonts:** Playfair Display, Montserrat (via next/font)
 - **Deployment:** Netlify (via GitHub)
 
@@ -21,33 +20,34 @@ src/
     globals.css     # Global styles, CSS variables, utility classes
     sitemap.js      # Dynamic sitemap.xml
     robots.js       # robots.txt
-    opengraph-image.js  # Dynamic OG image (1200×630)
   components/
     Header.js       # Navigation bar with logo + links
-    Products.js     # Product grid (static data from utils/products.js)
+    Products.js     # Product grid (static data)
     AboutUs.js      # Brand story section
     Reviews.js      # Customer testimonials
-    NewsletterSignup.js  # Email capture form
+    NewsletterSignup.js  # Email capture form (Netlify Forms)
     ThreeCanvas.js  # 3D scene (React Three Fiber)
   utils/
+    products.js     # Static product data (7 products)
 public/
   lifestyle_bg.png  # Hero background image
 ```
 
 ## Key Features
 - **Server Components** by default (App Router)
-- **"use client"** only where interactivity needed (Header, Products, Newsletter)
+- **"use client"** only where interactivity needed (Header, Newsletter)
 - **JSON-LD Structured Data:** Organization, WebSite, Product schemas
 - **Full SEO:** metadataBase, title.template, OG image, Twitter cards, sitemap, robots
-- **Newsletter Signup:** Client-side form component (needs email service integration)
+- **Static Product Data:** 7 products with prices, descriptions, and images
+- **Newsletter Signup:** Netlify Forms for email capture
 
 ## SEO Metadata (src/app/layout.js)
 - `metadataBase`: https://www.harrycorner.com
 - Open Graph + Twitter card images via `/opengraph-image.png`
 - JSON-LD: Organization + WebSite in root layout
-- Product JSON-LD each product card (src/components/Products.js)
+- Product JSON-LD per product card (src/components/Products.js)
 
 ## Current URLs (need updating on deploy)
 - Canonical: `https://www.harrycorner.com`
 - Sitemap: `https://www.harrycorner.com`
-- Social links placeholder: `instagram.com/harrycorner`, `tiktok.com/@harrycorner`, `pinterest.com/harrycorner`
+- Social links: `instagram.com/harrycorner`, `tiktok.com/@harrycorner`, `pinterest.com/harrycorner`
