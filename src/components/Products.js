@@ -68,6 +68,25 @@ export default async function Products() {
             </a>
           ))}
         </div>
+
+        {/* Magic Touch Banner */}
+        <div className={styles.magicBanner}>
+          <div className={styles.magicImageWrapper}>
+            <img
+              src="/images/magic-touch.png"
+              alt="Danish dough whisk with colorful sprinkles"
+              className={styles.magicImage}
+            />
+          </div>
+          <div className={styles.magicContent}>
+            <span className={styles.magicTagline}>HARRY CORNER</span>
+            <h3 className={styles.magicTitle}>Magic Touch to Your Kitchen</h3>
+            <p className={styles.magicText}>
+              One whisk. Infinite possibilities. From sourdough to cookies, our
+              Danish Dough Whisk transforms the way you bake.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );

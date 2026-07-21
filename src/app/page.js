@@ -1,7 +1,6 @@
 ﻿import Header from "../components/Header";
 import AboutUs from "../components/AboutUs";
 import Products from "../components/Products";
-import MagicTouch from "../components/MagicTouch";
 import Reviews from "../components/Reviews";
 import NewsletterSignup from "../components/NewsletterSignup";
 import Explore from "../components/Explore";
@@ -50,9 +49,6 @@ export default function Home() {
 
         {/* E-Commerce Products Section */}
         <Products />
-
-        {/* Magic Touch Section */}
-        <MagicTouch />
 
         {/* About Us Section */}
         <AboutUs />
