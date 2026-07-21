@@ -146,7 +146,6 @@
 - Google Analytics 4 or PostHog for traffic analysis
 - Google Search Console for search performance
 - Heatmap tool (Hotjar, Microsoft Clarity) for user behavior
-- Shopify Analytics for conversion tracking
 
 ### Weekly Review Checklist
 1. Check Google Search Console: impressions, clicks, average position

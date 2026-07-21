@@ -18,9 +18,7 @@ export default function Products() {
           {products.map((product) => (
             <a
               key={product.id}
-              href={product.shopifyUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#products"
               className={styles.card}
             >
               <div className={styles.imageWrapper}>

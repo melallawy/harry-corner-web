@@ -75,4 +75,3 @@ Premium kitchen tools that blend practical elegance with uncompromising durabili
 
 ## Domain
 - Primary: harrycorner.com
-- Shopify Store: harry-corner.myshopify.com
