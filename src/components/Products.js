@@ -1,9 +1,7 @@
-﻿import { fetchShopifyProducts } from "../utils/shopify";
+﻿import products from "../utils/products";
 import styles from "./Products.module.css";
 
-export default async function Products() {
-  const products = await fetchShopifyProducts();
-
+export default function Products() {
   if (!products || products.length === 0) {
     return null;
   }
