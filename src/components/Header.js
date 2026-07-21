@@ -16,13 +16,19 @@ export default function Header() {
         
         <ul className={styles.navLinks}>
           <li>
-            <a href="#products">PRODUCTS</a>
+            <a href="#products">SHOP</a>
+          </li>
+          <li>
+            <Link href="/recipes">RECIPES</Link>
+          </li>
+          <li>
+            <Link href="/how-tos">{"HOW TO'S"}</Link>
+          </li>
+          <li>
+            <Link href="/videos">VIDEOS</Link>
           </li>
           <li>
             <a href="#about">ABOUT US</a>
-          </li>
-          <li>
-            <a href="#reviews">REVIEWS</a>
           </li>
         </ul>
       </nav>

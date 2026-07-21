@@ -3,6 +3,8 @@ import AboutUs from "../components/AboutUs";
 import Products from "../components/Products";
 import Reviews from "../components/Reviews";
 import NewsletterSignup from "../components/NewsletterSignup";
+import Explore from "../components/Explore";
+import HowToArticles from "../components/HowToArticles";
 import { ArrowRight } from "lucide-react";
 import styles from "./page.module.css";
 
@@ -52,6 +54,12 @@ export default function Home() {
 
         {/* Reviews Section */}
         <Reviews />
+
+        {/* How-to Articles Section */}
+        <HowToArticles />
+
+        {/* Explore Section */}
+        <Explore />
 
         {/* Newsletter Signup */}
         <NewsletterSignup />
