@@ -39,20 +39,7 @@ public/
 - **"use client"** only where interactivity needed (Header, Products, Newsletter)
 - **JSON-LD Structured Data:** Organization, WebSite, Product schemas
 - **Full SEO:** metadataBase, title.template, OG image, Twitter cards, sitemap, robots
-- **Shopify Integration:** Fetches products via Storefront GraphQL API, falls back to mock data
 - **Newsletter Signup:** Client-side form component (needs email service integration)
-
-## Environment Variables (.env.local)
-```
-NEXT_PUBLIC_SHOPIFY_DOMAIN=harry-corner.myshopify.com
-NEXT_PUBLIC_SHOPIFY_STOREFRONT_TOKEN=<storefront-access-token>
-```
-
-## Shopify API
-- Endpoint: `https://{domain}/api/2024-01/graphql.json`
-- Fetches up to 6 products with title, handle, description, price, images
-- Falls back to 3 mock products if API fails or credentials missing
-- Products link to Shopify store + Amazon search
 
 ## SEO Metadata (src/app/layout.js)
 - `metadataBase`: https://www.harrycorner.com
