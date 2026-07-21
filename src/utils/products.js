@@ -13,12 +13,11 @@ const products = [
       "Works with sourdough, bread, pizza, and cookie dough",
       "Dishwasher safe",
     ],
-    buyLink: "https://amazon.com",
   },
   {
     id: "2",
     title: "Danish Dough Whisk — 304 Stainless Steel",
-    price: "9.99",
+    price: "8.99",
     description:
       "Premium 304 stainless steel Danish dough whisk. Heavy-duty construction for serious bakers who demand durability.",
     imageUrl:
@@ -29,7 +28,6 @@ const products = [
       "Replaces bulky stand mixers for many recipes",
       "Easy to clean by hand",
     ],
-    buyLink: "https://amazon.com",
   },
   {
     id: "3",
@@ -45,7 +43,6 @@ const products = [
       "Both tools essential for sourdough baking",
       "Save vs. buying separately",
     ],
-    buyLink: "https://amazon.com",
   },
   {
     id: "4",
@@ -61,55 +58,108 @@ const products = [
       "Professional performance at home",
       "Perfect for pizza dough, bread, and batters",
     ],
-    buyLink: "https://amazon.com",
   },
   {
     id: "5",
-    title: "Premium Bench Scraper & Chopper",
-    price: "7.99",
+    title: "Professional Rolling Pin",
+    price: "34.99",
     description:
-      "Multi-purpose stainless steel bench scraper for cutting, portioning, and lifting dough. An essential tool for every baker.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1598128558393-70ff21433be0?w=600&h=450&fit=crop",
+      "Heavy-duty rolling pin with double-bearing rotation handles. Commercial-grade performance for flawless dough rolling every time.",
+    imageUrl: "/images/rolling-pin.svg",
     features: [
-      "Rust-resistant stainless steel blade",
-      "Comfortable ergonomic handle",
-      "Perfect for dividing dough, scraping counters",
-      "Laser-etched measurement markings",
+      "Double-bearing rotation handles for smooth rolling",
+      "Even thickness distribution",
+      "Perfect for pastries, cookies, and bread",
+      "Easy-grip handles reduce wrist strain",
     ],
-    buyLink: "https://amazon.com",
   },
   {
     id: "6",
-    title: "Stainless Steel Mixing Bowl Set — 3-Piece",
-    price: "24.99",
+    title: "Premium Mixing Bowl Set — 3-Piece",
+    price: "44.99",
     description:
-      "Tri-ply stainless steel mixing bowls in 3 nesting sizes. Ideal for dough, batters, and all your kitchen prep.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1594226801341-41427b4c9c6e?w=600&h=450&fit=crop",
+      "Handcrafted mixing bowls with a premium finish. Nesting design in 3 sizes for every mixing task in your kitchen.",
+    imageUrl: "/images/mixing-bowl.svg",
     features: [
-      "3 sizes: 1.5qt, 3qt, 5qt",
-      "Tri-ply construction for even temperature",
-      "Nesting design saves cabinet space",
-      "Dishwasher safe",
+      "Set of 3 nesting sizes for every task",
+      "Premium materials for lasting durability",
+      "Non-slip base for secure mixing",
+      "Easy to clean and stackable storage",
     ],
-    buyLink: "https://amazon.com",
   },
   {
     id: "7",
-    title: "French Rolling Pin — Tapered Design",
-    price: "14.99",
+    title: "Heavy-Duty Bench Scraper & Chopper",
+    price: "19.99",
     description:
-      "Traditional French tapered rolling pin for superior control. Perfect for pastries, pizza, and bread shaping.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=600&h=450&fit=crop",
+      "Laser-etched measurement guides on a precision-ground stainless steel blade. The ultimate bench scraper and chopper combo for bakers.",
+    imageUrl: "/images/bench-scraper.svg",
     features: [
-      "Tapered design for precise pressure control",
-      "Smooth hardwood surface — no sticking",
-      "Lighter than standard rolling pins",
-      "Easy to clean and maintain",
+      "Laser-etched measurement guides",
+      "Precision-ground stainless steel blade",
+      "Comfortable ergonomic handle",
+      "Great for cutting, scraping, and portioning dough",
     ],
-    buyLink: "https://amazon.com",
+  },
+  {
+    id: "8",
+    title: "Bread Lame — Professional Scoring Tool",
+    price: "12.99",
+    description:
+      "Premium bread lame with adjustable blade depth. Score perfect patterns on your artisan loaves for professional bakery results at home.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=600&h=450&fit=crop",
+    features: [
+      "Adjustable blade depth for various scoring styles",
+      "Ergonomic wooden handle",
+      "Includes 10 replacement blades",
+      "Protective cap included for safe storage",
+    ],
+  },
+  {
+    id: "9",
+    title: "Proofing Basket — Artisan Banneton",
+    price: "18.99",
+    description:
+      "Handwoven artisan banneton proofing basket. Creates the perfect crust and classic spiral pattern on your sourdough boules.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1558730234-d8b3741c3e3d?w=600&h=450&fit=crop",
+    features: [
+      "Handwoven natural rattan construction",
+      "9-inch round size for 1-2lb loaves",
+      "Removable linen liner for easy cleaning",
+      "Creates artisan spiral pattern on crust",
+    ],
+  },
+  {
+    id: "10",
+    title: "Premium Kitchen Scale — Digital",
+    price: "22.99",
+    description:
+      "Precision digital kitchen scale with tare function and multiple units. Essential for consistent baking results every time.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1587314168485-3236d671bf9c?w=600&h=450&fit=crop",
+    features: [
+      "Accurate to 1g increments",
+      "Measures in g, kg, lb, oz, ml, fl.oz",
+      "Tare function for easy bowl measurements",
+      "Compact design with removable stainless platform",
+    ],
+  },
+  {
+    id: "11",
+    title: "Silicone Pastry Brush — Heat Resistant",
+    price: "7.99",
+    description:
+      "Heat-resistant silicone pastry brush for butter, egg washes, and glazes. Easy to clean and built to last.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1594040226829-7f251ab46a80?w=600&h=450&fit=crop",
+    features: [
+      "Heat resistant up to 600°F",
+      "Silicone bristles won't shed or absorb odors",
+      "Comfortable ergonomic handle",
+      "Dishwasher safe",
+    ],
   },
 ];
 
