@@ -1,1 +1,9 @@
-/*    /index.html    200
+/ /index.html 200
+/404 /404.html 200
+/_not-found /_not-found.html 200
+/recipes /recipes.html 200
+/recipes/* /recipes/:splat.html 200
+/how-tos /how-tos.html 200
+/how-tos/* /how-tos/:splat.html 200
+/videos /videos.html 200
+/media /media.html 200
