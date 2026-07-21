@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 120px; /* offset for sticky navbar */
+  padding-top: 120px;
   background: linear-gradient(to right, rgba(18, 18, 18, 0.95) 30%, rgba(18, 18, 18, 0.7) 70%), url('/lifestyle_bg.png');
   background-size: cover;
   background-position: center;
@@ -56,7 +56,6 @@
   margin-top: 12px;
 }
 
-/* Custom premium styling for Buy Now button to make it extra attractive */
 .btnBuyNow {
   display: inline-flex;
   align-items: center;
@@ -94,7 +93,6 @@
   z-index: 5;
 }
 
-/* Floating helper element behind the 3D scene */
 .glowOverlay {
   position: absolute;
   width: 300px;
@@ -171,29 +169,29 @@
     min-height: auto;
     padding: 160px 0 80px 0;
   }
-  
+
   .heroContainer {
     grid-template-columns: 1fr;
     gap: 48px;
     text-align: center;
   }
-  
+
   .heroLeft {
     align-items: center;
   }
-  
+
   .heroTitle {
     font-size: 3rem;
   }
-  
+
   .heroSubtitle {
     margin: 0 auto;
   }
-  
+
   .heroActions {
     justify-content: center;
   }
-  
+
   .heroRight {
     height: 350px;
   }
