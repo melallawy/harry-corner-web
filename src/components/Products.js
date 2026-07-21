@@ -1,11 +1,6 @@
-﻿import products from "../utils/products";
-import styles from "./Products.module.css";
+﻿import styles from "./Products.module.css";
 
 export default function Products() {
-  if (!products || products.length === 0) {
-    return null;
-  }
-
   return (
     <section id="products" className="section">
       <div className="container">
@@ -13,57 +8,6 @@ export default function Products() {
         <p className="section-subtitle">
           Tools, Not Gadgets. Premium essentials for your kitchen.
         </p>
-
-        <div className={styles.grid}>
-          {products.map((product) => (
-            <a
-              key={product.id}
-              href="#products"
-              className={styles.card}
-            >
-              <div className={styles.imageWrapper}>
-                <img
-                  src={product.imageUrl}
-                  alt={`${product.title} — Harry Corner premium kitchen tool`}
-                  className={styles.productImage}
-                  loading="lazy"
-                />
-              </div>
-
-              <div className={styles.info}>
-                <h3 className={styles.productTitle}>{product.title}</h3>
-                <p className={styles.description}>{product.description}</p>
-                <div className={styles.footer}>
-                  <span className={styles.price}>${product.price}</span>
-                  <span className={styles.buyBtn}>BUY NOW →</span>
-                </div>
-              </div>
-
-              <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                  __html: JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "Product",
-                    name: product.title,
-                    description: product.description,
-                    image: product.imageUrl,
-                    offers: {
-                      "@type": "Offer",
-                      price: product.price,
-                      priceCurrency: "USD",
-                      availability: "https://schema.org/InStock",
-                    },
-                    brand: {
-                      "@type": "Brand",
-                      name: "Harry Corner",
-                    },
-                  }),
-                }}
-              />
-            </a>
-          ))}
-        </div>
 
         {/* Magic Touch Banner */}
         <div className={styles.magicBanner}>
