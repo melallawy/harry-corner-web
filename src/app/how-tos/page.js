@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "../pages.module.css";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export const metadata = {
   title: "How-To Articles",
@@ -108,6 +109,7 @@ export default function HowTosPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }

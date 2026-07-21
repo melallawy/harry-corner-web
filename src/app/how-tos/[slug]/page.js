@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "../../pages.module.css";
 import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
 import { howToArticles } from "../../../utils/howToArticles";
 import { notFound } from "next/navigation";
 
@@ -65,6 +66,7 @@ export default async function HowToArticlePage({ params }) {
           </article>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

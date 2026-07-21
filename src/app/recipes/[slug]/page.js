@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "../../pages.module.css";
 import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
 import { recipes } from "../../../utils/recipes";
 import { notFound } from "next/navigation";
 
@@ -105,6 +106,7 @@ export default async function RecipePage({ params }) {
           </article>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

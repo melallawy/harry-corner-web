@@ -1,5 +1,6 @@
 import styles from "../pages.module.css";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export const metadata = {
   title: "Videos",
@@ -65,6 +66,7 @@ export default function VideosPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }

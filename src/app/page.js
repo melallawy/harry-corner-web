@@ -6,6 +6,7 @@ import NewsletterSignup from "../components/NewsletterSignup";
 import Explore from "../components/Explore";
 import HowToArticles from "../components/HowToArticles";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -68,6 +69,13 @@ export default function Home() {
       {/* Footer */}
       <footer className={styles.footer}>
         <div className="container">
+          <div className={styles.footerNav}>
+            <Link href="/#products">SHOP</Link>
+            <Link href="/recipes">RECIPES</Link>
+            <Link href="/how-tos">{"HOW TO'S"}</Link>
+            <Link href="/videos">VIDEOS</Link>
+            <Link href="/#about">ABOUT US</Link>
+          </div>
           <div className={styles.footerContent}>
             <div className={styles.footerLogo}>
               <span className={styles.footerLogoBold}>HARRY</span>

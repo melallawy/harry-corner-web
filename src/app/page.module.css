@@ -108,6 +108,28 @@
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+.footerNav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.footerNav a {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  transition: var(--transition-smooth);
+}
+
+.footerNav a:hover {
+  color: var(--accent, #c9a96e);
+}
+
 .footerContent {
   display: flex;
   flex-direction: column;

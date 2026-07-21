@@ -1,8 +1,8 @@
 .explore {
-  background-color: #f8f8f8;
+  background-color: var(--bg-secondary, #1a1a1a);
   padding: 60px 0;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .exploreContent {
@@ -11,11 +11,12 @@
 
 .exploreTitle {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
-  color: #666;
+  letter-spacing: 0.25em;
+  color: var(--accent, #c9a96e);
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 
 .exploreLinks {
@@ -30,14 +31,14 @@
 .exploreLink {
   font-family: var(--font-sans);
   font-size: 1.1rem;
-  font-weight: 400;
-  color: #1a1a1a;
+  font-weight: 300;
+  color: var(--text-primary, #fff);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .exploreLink:hover {
-  color: #666;
+  color: var(--accent, #c9a96e);
 }
 
 @media (max-width: 768px) {

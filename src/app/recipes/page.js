@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "../pages.module.css";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export const metadata = {
   title: "Recipes",
@@ -115,6 +116,7 @@ export default function RecipesPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }
